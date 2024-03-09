@@ -1,115 +1,3 @@
-# dbt™ Data Modeling Challenge - NBA Edition
-
-Welcome to the [Paradime dbt™ Data Modeling Challenge - NBA Edition](https://www.paradime.io/dbt-data-modeling-challenge-nba-edition#)!
-
-## Table of Contents
-1. [Getting Started](#getting-started)
-   - [Registration and Verification](#step-1-registration-and-verification)
-   - [Account Set-Up](#step-2-account-set-up)
-   - [Paradime Account Configuration](#step-3-paradime-account-configuration)
-   - [Kickstart Your Project](#step-4-kickstart-your-project)
-2. [Competition Details](#competition-details)
-3. [Building Your Project](#building-your-project)
-4. [Example Submission](#example-submission)
-
----
-
-## Getting Started
-
-### Step 1: Registration and Verification
-- **Submit Your Application**: Fill out the [registration form](https://www.paradime.io/dbt-data-modeling-challenge-nba-edition#div-registration-form).
-- **Verification by Paradime**: We'll review your application against the [entry requirements](https://www.paradime.io/dbt-data-modeling-challenge-nba-edition#div-how-it-works-2).
-
-### Step 2: Account Set-Up
-After verification, you'll receive two emails from Paradime:
-1. **Snowflake Account Credentials**: Contains your Snowflake account details. Search for an email with subject line "*Start Your NBA Data Modeling Challenge – Your Snowflake Credentials*."
-2. **Paradime Platform Invitation**: An invitation to access the Paradime Platform. Search for an email with the subject line "*[Paradime] Activate your account*."
-
-### Step 3: Paradime Account Configuration
-- **Access Paradime**: Use the provided credentials to log into your account. Join the Paradime workspace using the invite email.
-- **Snowflake Integration**: Add Snowflake credentials (Username, Password, Role, Database) to Paradime.
-- **Act Fast - Limited Time Activation**: The links to activate your Paradime account expire within 24 hours!
-
-Note: A step-by-step tutorial is available in you Snowflake credentials email, "*Start Your NBA Data Modeling Challenge – Your Snowflake Credentials*".
-
-### Step 4: Kickstart Your Project
-- **Create a New Branch**: Open the Paradime Editor and create a new branch. Your branch name should follow this format: "nba-<your_email>"
-- **Start Developing**: Begin crafting SQL queries, developing dbt™ models, and generating insights!
-   ![Start Developing in Paradime](link_to_arcade_screenshot)
-note: If you login to snowflake, your default role is public. Swith your role to the one we provide in the email "NAME_ANALYTICS" (role name also provided in snowflake email. 
-
-**Need Help?**: Check out [this step-by-step video tutorial](https://app.arcade.software/share/9JaKC9DmaGYBTW1sWlhf), and join the #nba-challenge channel on [Slack](https://paradimers.slack.com/join/shared_invite/zt-1mzax4sb8-jgw~hXRlDHAx~KN0az18bw#/shared-invite/email) for assistance.
-
----
-
-## Competition Details
-- **[Entry Requirements](https://www.paradime.io/dbt-data-modeling-challenge-nba-edition#div-how-it-works-2)**
-- **[Competition Deliverables](https://www.paradime.io/dbt-data-modeling-challenge-nba-edition#div-how-it-works-2)**
-- **[Judging Criteria](https://www.paradime.io/dbt-data-modeling-challenge-nba-edition#div-how-it-works-2)**
-
----
-## Building Your Project
-
-Now that you're set up, you have until March 8, 2024 to complete and submit your project!
-
-### Step 1: Getting to Know the Paradime
-
-- **The Paradime Editor**: Dive into the Paradime Editor with this step-by-step, [interactive guide](https://app.arcade.software/share/9JaKC9DmaGYBTW1sWlhf). It's designed to familiarize you with the core functionalities and of the editor, and get your familiar with the Project. 
-- **Paradime Help Docs**: For a comprehensive understanding of all the features and how to make the most of Paradime for your project, explore the [Paradime Help Docs](https://docs.paradime.io/app-help/welcome-to-paradime.io/readme).
-
-### Step 2: Getting to Know the NBA Data
-
-Paradime has pre-loaded your Snowflake account with 7 historical NBA datasets, offering comprehensive and detailed statistics about games, players, teams, salaries, and more, typically covering the years 1947-2023. Familiarize yourself with these datasets through various resources:
-
-- **In Snowflake**: Directly explore the datasets in [Snowflake](https://app.snowflake.com/kbuwhsf/xrb98600) for hands-on analysis.
-- **GitHub Repository Resources**:
-  - [Staging Files](https://github.com/paradime-io/paradime-dbt-nba-data-challenge/tree/main/models/sources): These files provide a preliminary view and structure of the datasets available in this repository.
-  - [schema.yml File](https://github.com/paradime-io/paradime-dbt-nba-data-challenge/blob/main/models/sources/schema.yml): This file contains schema definitions, helping you understand the data models and their relationships.
-- **Paradime Catalog UI**: Use the [Paradime Catalog UI](https://app.paradime.io/catalog/search) for an interactive exploration of the datasets, featuring intuitive search and navigation.
-
-### Step 3: Generating Insights
-
-Your primary goal is to construct dbt™ models that unearth compelling insights, captivating NBA fans and/or General Managers. With seven distinct datasets at your disposal, the possibilities for discovery are virtually limitless. This is your playground to innovate and explore the depths of NBA data.
-
-Before diving in, ensure you're familiar with the [Judging Criteria](https://www.paradime.io/dbt-data-modeling-challenge-nba-edition#div-how-it-works-2) so you've got a chance to win the [$500-$1500 Amazon gift cards](https://www.paradime.io/dbt-data-modeling-challenge-nba-edition#div-whats-in-it-for-you)!
-
-Need a spark of inspiration? Check out the [example submission](https://github.com/paradime-io/paradime-dbt-nba-data-challenge?tab=readme-ov-file#example-submission), and here are some additional suggestions to kickstart your analytical journey:
-
-- **Second-Round Draft Picks**: Who stands out among the historically best second-round picks?
-      - Data Required: *[common_player_info](https://github.com/paradime-io/paradime-dbt-nba-data-challenge/blob/main/models/sources/stg_common_player_info.sql)*
-- **International Player Impact**: Which international players (Not born in the USA) have made the biggest mark in the NBA?
-      - Data Required: *[common_player_info](https://github.com/paradime-io/paradime-dbt-nba-data-challenge/blob/main/models/sources/stg_common_player_info.sql)*
-- **Efficiency in Spending**: Analyze which teams/players have gotten the most (or least!) value for their money.
-      - Data Required: *[team_spend_by_season](https://github.com/paradime-io/paradime-dbt-nba-data-challenge/blob/main/models/sources/stg_team_spend_by_season.sql)*, *[team_stats_by_season](https://github.com/paradime-io/paradime-dbt-nba-data-challenge/blob/main/models/sources/stg_team_stats_by_season.sql)*
-- **Performance Shifts**: Investigate players whose performance changes between the regular season and playoffs.
-      - Data Required: *[player_game_logs](https://github.com/paradime-io/paradime-dbt-nba-data-challenge/blob/main/models/sources/stg_player_game_logs.sql)*
-- **Contracts and Contributions**: Who are the NBA's most overpaid or underpaid players?
-   - Data Required: *[player_salaries_by_season](https://github.com/paradime-io/paradime-dbt-nba-data-challenge/blob/main/models/sources/stg_player_salaries_by_season.sql)*, *[player_game_logs](https://github.com/paradime-io/paradime-dbt-nba-data-challenge/blob/main/models/sources/stg_player_game_logs.sql)*
-- **Unexpected Playoff Outcomes**: Explore the anomalies - teams that defied odds, or underperformed, in the Playoffs
-  - Data Required: *[team_stats_by_season](https://github.com/paradime-io/paradime-dbt-nba-data-challenge/blob/main/models/sources/stg_team_stats_by_season.sql)*
-
-### Creating Data Visualizations
-When it comes to visualizing your insights, you have a variety of tools at your disposal, including basic options like Excel and Google Sheets. Here are some common methods you can consider:
-- **Cloud BI Platforms**: Utilize platforms like Power BI, Lightdash, Metabase, Preset, Tableau, Looker, Sigma, and more. Simply use the Snowflake credentials we provided to connect these platforms to your data.
-- **[Snowflake's Snowsight](https://docs.snowflake.com/en/user-guide/ui-snowsight-visualizations)**: Create visualizations directly within your provided Snowflake account, taking advantage of Snowflake's built-in visualization capabilities.
-- **[Download CSV](https://docs.paradime.io/app-help/code-ide/data-preview#download-csv)**: For a straightforward approach, export the data behind your dbt™ models from Snowflake to .csv files. This method was used in the [example submission](https://github.com/paradime-io/paradime-dbt-nba-data-challenge?tab=readme-ov-file#example-submission). Please note: if you opt for exporting to .csv, our judges will verify that the exported data accurately reflects the data behind your dbt™ models!
-
-Remember, the choice of tool is yours – select one that best fits your style and project needs!
-
-### Submitting Your Project
-**Submission Deadline:** March 8th, 2024
-Once your project is complete, please submit the following materials to Parker Rogers (parker@paradime.io) with Subject Line "<your_name> - NBA Data Modeling Challenge Submission":
-- **GitHub Branch**: Send the link to your GitHub branch containing your dbt™ models.
-- **README.md**: Include a README file that narrates your project's story, methodology, and insights. Check out this [example README](https://github.com/paradime-io/paradime-dbt-nba-data-challenge/blob/main/README.md#example-submission).
-- **Data Visualizations and Insights**: Showcase your findings, ideally within your README.md. For inspiration, refer to these [example visualizations](https://github.com/paradime-io/paradime-dbt-nba-data-challenge/blob/main/README.md#visualizations).
-
-If you're having issues submitting your project, watch [this totorial](https://app.arcade.software/share/mpoE0fK5HknHZJ3xLVVs)
-
-We look forward to seeing your creative and insightful analyses!
-
-# Example Submission
-Here's an example project that fulfills all requirements and would be elligble eligible for cash prizes. Feel free to use this template for your submission. 
-
 ## Table of Contents
 1. [Introduction](#introduction)
 2. [Data Sources](#data-sources)
@@ -117,90 +5,100 @@ Here's an example project that fulfills all requirements and would be elligble e
    - [Tools Used](#tools-used)
    - [Applied Techniques](#applied-techniques)
 4. [Visualizations](#visualizations)
-   - [Team Playoff Appearances](#team-playoff-appearances)
-   - [Player Playoff Games](#player-playoff-games)
-   - [Top Playoff Scorers](#top-playoff-scorers)
-   - [Top Regular Season Scorers](#top-regular-season-scorers)
-   - [NBA Players by University](#nba-players-by-university)
+   - [Experience among championship teams](#experience-among-championship-teams)
+   - [Draft spots among championship contenders](#draft-spots-among-championship-contenders)
+   - [Fouls and playoff contention](#fouls-and-playoff-contention)
+   - [3-point attempts among finals contenders](#3-point-attempts-among-finals-contenders)
+   - [Top 10 +/- players and playoff contention](#top-10-+/--players-and-playoff-contention)
+   - [Salary among starters](#salary-among-starters)
+   - [Clutch player performances in the playoffs](#clutch-player-performances-in-the-playoffs)
+   - [Dead payroll among playoff contenders](#dead-payroll-among-playoff-contenders)
+   - [Luxury tax bills among championship contenders](#luxury-tax-bills-among-championship-contenders)
 5. [Conclusions](#conclusions)
 
 ## Introduction
-Explore my project for the _dbt™ data modeling challenge - NBA Edition_, Hosted by [Paradime](https://www.paradime.io/)! This project dives into the analysis and visualization of NBA statistics, designed for basketball enthusiasts and analysts.
+This project combines several public NBA tables to help understand which factors lead to a championship-winning team. Nearly all insights only observe seasons since 2000-01 for relative comparison. All insights compare data between teams based on their season outcome: No playoffs, Playoff contenders, Finals appearance, or League champions. 
 
-### [My GitHub repo](https://github.com/paradime-io/paradime-dbt-nba-data-challenge/?tab=readme-ov-file#my-github-repo)
+### [My GitHub repo](https://github.com/paradime-io/paradime-dbt-nba-data-challenge/tree/nba-atticus-gazerlabs-com)
 
 ## Data Sources
 My analysis leverages three key NBA datasets from Paradime:
 - *PLAYER_GAME_LOGS*
 - *TEAM_STATS_BY_SEASON*
 - *COMMON_PLAYER_INFO*
+- *TEAM_SPEND_BY_SEASON*
+- *PLAYER_SALARIES_BY_SEASON*
 
 ## Methodology
 ### Tools Used
 - **[Paradime](https://www.paradime.io/)** for SQL, dbt™.
 - **[Snowflake](https://www.snowflake.com/)** for data storage and computing.
-- **Google Sheets** for data visualization.
+- **[Sigma](https://www.sigmacomputing.com/)** for data visualization.
 
 ### Applied Techniques
-- SQL and dbt™ to transform _stg_player_game_logs_ into seasonal player statistics
-- SQL and dbt™ to transform _stg_player_game_logs_ and _stg_common_player_info_ to understand
-  playoff and regular season performance by individual players
-- SQL and dbt™ to transform _stg_common_player_info_ for insights on NBA players' college backgrounds.
-- SQL and dbt™ to transform _stg_team_stats_by_season_ for insights on NBA Teams' historical playoff performance.
+- SQL and dbt™ to transform _height_normalized_ to format player heights in inches, casted as integers.
+- SQL and dbt™ to transform _player_stats_by_season_ to combine regular season point and minute averages with draft and experience metrics. 
+- SQL and dbt™ to transform _plus_minus_top_ten_by_year_ to parse the top 10 players in +/- over each year.
+- SQL and dbt™ to transform _team_stats_by_player_by_season_ to map _player_stats_by_season_ to a team's outcome in a given season e.g. playoff appearance
+- SQL and dbt™ to transform _team_stats_by_player_by_season_starting_five_ to understand player metrics and team outcomes when observing only a team's starting 5 players.
+- SQL and dbt™ to transform _top_playoff_performances_ to understand which teams had players scoring 35 points or more in playoff games.
+- SQL and dbt™ to transform _undrafted_normalization_ to quantify undrafted players with a draft rank in order to calculate average draft numbers. 
 
 ## Visualizations
-### Team Playoff Appearances
-Visualization of playoff appearances for all 30 NBA teams, including their playoff appearance rates.
+### Experience among championship teams
+91% of the time in the last 23 seasons teams that make the Finals have a higher average experience (~8 years) among their starting 5 than teams that don't make the Finals. Teams that didn't make the playoffs nearly always have less average experience (~5 years) among their starting 5 than teams that make the playoffs. 
 
-![Team Playoff Appearances](https://github.com/paradime-io/paradime-dbt-nba-data-challenge/assets/107123308/cd69a2fa-6b60-44de-b8bc-2f6a6828f033)
+<img width="1101" alt="Screenshot 2024-03-08 at 10 44 02 PM" src="https://github.com/paradime-io/paradime-dbt-nba-data-challenge/assets/16438456/1ff07f48-2ba8-4122-ac12-d96d86d20499">
 
-*Insights:*
-The Los Angeles Lakers' dominance in playoff appearances, and the San Antonio Spurs' highest playoff appearance rate.
-The Spurs have only missed the playoffs 9 times!
+*Experience = years in league*
+*Starting 5 = players with highest minutes-per-game average across regular season*
 
-### Player Playoff Games
-Assessment of NBA players with the highest number of playoff game wins and their win percentages. The '*' next to NBA Player name indicates if they're 
-a member of the [NBA Greatest 75 Team](https://www.nba.com/news/nba-75th-anniversary-team-announced)
+### Draft spots among championship contenders
+Several championship contenders in the last 23 seasons had undrafted or later draft picks in their starting 5. While early draft picks may lead to talented prospects, recent evidence shows these picks may not lead to championships.  
 
-![Player Playoff Games](https://github.com/paradime-io/paradime-dbt-nba-data-challenge/assets/107123308/ffd6abf3-b8a8-411f-a0be-12402a5d1b45)
+<img width="1103" alt="Screenshot 2024-03-08 at 10 55 01 PM" src="https://github.com/paradime-io/paradime-dbt-nba-data-challenge/assets/16438456/b4d0a912-cb4b-4c9b-8895-ef1192baf240">
 
-*Insights:* 
-LeBron James has the most playoff wins of any player, but here's what's most interesting: 
-Of the 25 players with the most playoff wins, only 12 of them are members of the [NBA Greatest 75 team](https://www.nba.com/news/nba-75th-anniversary-team-announced). 
-There are several players listed that impact playoff wins and compliment their team's best players, but aren't known 
-as on the the all time greats, such as: Derek Fisher, Robert Horry, Danny Green. 
+*Undrafted normalization = undrafted players are assigned +1 the highest draft pick in a given year to calculate average draft picks.*
 
-### Top Playoff Scorers
-Showcases players who achieved the the most points scored in any playoff season.
+### Fouls and playoff contention 
+The amount of fouls a team gives doesn't impact whether they make the playoffs or even the finals. 35% of championship contenders in the last 23 seasons gave more fouls, on average, than the rest of the league. 
 
-![Top Playoff Scorers](https://github.com/paradime-io/paradime-dbt-nba-data-challenge/assets/107123308/db51f47a-5cfb-431c-9c7b-3a793a6b4352)
+<img width="1098" alt="Screenshot 2024-03-08 at 11 03 34 PM" src="https://github.com/paradime-io/paradime-dbt-nba-data-challenge/assets/16438456/7d23d458-2ca1-4cbd-9305-00a558ae30eb">
 
-*Insights:* 
-Michael Jordan, LeBron James, and Kobe Bryant are the only players having three seasons within the top 25 
-highest most points scored in a playoff season.
+### 3-point attempts among finals contenders
+87% of the time in the last 23 seasons a team that made the finals led the league in 3-pointers attempted. Based on this evidence it's advantageous to sign players that shoot many 3-pointers, regardless of % made.
 
-### Top Regular Season Scorers
-Highlights NBA players who scored the most in regular seasons.
+<img width="1100" alt="Screenshot 2024-03-08 at 11 09 29 PM" src="https://github.com/paradime-io/paradime-dbt-nba-data-challenge/assets/16438456/9d910e92-2e18-46f1-a0cf-7a6332a6f01a">
 
-![Top Regular Season Scorers](https://github.com/paradime-io/paradime-dbt-nba-data-challenge/assets/107123308/774223ad-11f0-4202-817f-5a8c1daf3afc)
+### Top 10 +/- players and playoff contention
++/- tells a player's point differential while on the court. In the last 23 seasons, teams that make the playoffs nearly always have a player in the top 10 for +/-. If your team lacks a top 10 +/- player, it's important to trade for one if you want to make a playoff run. 
 
-*Insights:* 
-Wilt Chamberlain is one of the best regular season scorer of all time. In addition to having the most points scored 
-in any regular season ever (4,029), he also has six season in the top 25. The only other player with 6 top 25 seasons is Michael Jordan.
-In the chart above, notice that Wilt Chamberlain doesn't appear once in the top 25 playoff scorers of all time 👀.
+<img width="1107" alt="Screenshot 2024-03-08 at 11 16 16 PM" src="https://github.com/paradime-io/paradime-dbt-nba-data-challenge/assets/16438456/2fabb4d0-3aee-450f-a028-f092a8da93f7">
 
-### NBA Players by University
-Displays which universities have produced the most NBA players.
+### Salary among starters
+91% of finals contenders since 2000-01 had the most expensive starting 5, on average, compared to the rest of the league. If you want to compete for a championship, recent evidence shows you have to spend more on your top players than other teams.
 
-![NBA Players by University](https://github.com/paradime-io/paradime-dbt-nba-data-challenge/assets/107123308/e21af17a-9cb8-491a-8e0d-b70eae118324)
+<img width="1100" alt="Screenshot 2024-03-08 at 11 24 32 PM" src="https://github.com/paradime-io/paradime-dbt-nba-data-challenge/assets/16438456/c9660b00-1bcd-4d25-8a24-b91dc1b1fff4">
 
-*Insights:* 
-Kentucky has produced the most NBA players in NBA history by a significant margin.... Go Wildcats! Also, this data is [slightly inaccurate](https://erudera.com/resources/colleges-with-most-nba-players/), but that's the NBA API's fault, not mine 🤣
+### Clutch player performances in the playoffs
+Teams making the finals nearly always have a higher number of clutch-player performances (35+ point game) than the rest of playoff contenders. To compete for a championship, you need a player that can reliably score big in the playoffs. 
+
+<img width="1103" alt="Screenshot 2024-03-08 at 11 29 20 PM" src="https://github.com/paradime-io/paradime-dbt-nba-data-challenge/assets/16438456/ac89d353-ed46-4622-ae24-81424317415c">
+
+### Dead payroll among playoff contenders
+Teams with higher dead payroll typically don't make the playoffs. Smart player signings that don't result in premature trades are an indicator of playoff contention. 
+
+<img width="1100" alt="Screenshot 2024-03-08 at 11 32 54 PM" src="https://github.com/paradime-io/paradime-dbt-nba-data-challenge/assets/16438456/bc0e3a30-7b46-4edc-8474-d45757aebfb6">
+
+### Luxury tax bills among championship contenders
+Since 2011-12, 92% of championship contenders had higher average luxury tax bills. Recent evidence shows it pays off to dip into luxury tax space and pay extra for top talent if you want to win a championship. 
+
+<img width="1107" alt="Screenshot 2024-03-08 at 11 35 21 PM" src="https://github.com/paradime-io/paradime-dbt-nba-data-challenge/assets/16438456/6f7f3e78-f6ea-4cdd-9081-ccf1561a3036">
 
 ## Conclusions
-This project successfully extracts significant insights from NBA data that NBA fans would find interesting, such as: 
+This project successfully extracts significant insights from NBA data that GMs & NBA fans would find interesting, such as: 
 
-- The dominance of teams like the Los Angeles Lakers and the San Antonio Spurs in playoff appearances
-- The critical role of "role" players, as highlighted by the playoff games by player insights,
-- The extraordinary achievements of players like LeBron James, Michael Jordan in the playoffs, and Wilt Chamberlain in the regular season. 
-- The influence of universities like Kentucky in producing NBA talent.
+- It pays off to spend more on starting players, especially those with more experience in the league who can put up big numbers during playoff time and shoot 3-pointers often. 
+- Target +/- as a north star metric when assessing player value as it relates to championship likelihood. 
+- Early draft picks don't seem to materialize into championship runs.
+- Avoid trading away and creating dead payroll at all costs. 
